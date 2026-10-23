@@ -1,8 +1,10 @@
 <script>
-const h1 = document.querySelectorAll("h1")[0]
-h1.innerHTML = 'NEGLIGENCE IS A VULNERABILITY TOO'
-h1.style.fontSize = '50px'
-h1.style.color = "blue"
-h1.after(Object.assign(document.createElement('span'),{innerText:'~ Unknown user ~'}))
+document.addEventListener('DOMContentLoaded', () => {
+  const h1 = document.querySelectorAll("h1")[0]
+  h1.innerHTML = 'NEGLIGENCE IS A VULNERABILITY TOO'
+  h1.style.fontSize = '50px'
+  h1.style.color = "blue"
+  h1.after(Object.assign(document.createElement('span'),{innerText:'~ Unknown user ~'}))
+})
 </script>
 <font color="white">TEST</font>
