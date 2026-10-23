@@ -1,11 +1,14 @@
 <script>
-  const timer = setInterval(() => {
-  document.querySelectorAll('h1').length
-  const h1 = document.querySelectorAll("h1")[0]
-  h1.innerHTML = 'NEGLIGENCE IS A VULNERABILITY TOO'
-  h1.style.fontSize = '50px'
-  h1.style.color = "blue"
-  h1.after(Object.assign(document.createElement('span'),{innerText:'~ Unknown user ~'})
-  )}, 300);
+const timer = setInterval(() => {
+  const h1 = document.querySelector('h1');
+  if (!h1) return;
+
+  clearInterval(timer);
+  h1.innerHTML = 'Hello';
+  h1.style.cssText = 'font-size:50px;color:blue';
+  h1.append(Object.assign(document.createElement('span'), {
+    innerText: ' ~ Unknown user ~'
+  }));
+}, 300);
 </script>
 <font color="white">TEST</font>
